@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorNuevo">#d3f5e7</color>
+    <color name="colorNuevo2">#ffd903</color>
+    <color name="colorNuevo3">#FF0000</color>
+    <color name="colorNuevo4">#86faa7</color>
+    <color name="colorNuevo5">#0439f5</color>
+    <color name="colorNuevo6">#4cf249</color>
+
+    <color name="rojo">#ff0000</color>
+    <color name="verde">#00ff00</color>
+
+
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_detalle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mauro.proyectotp.DetalleActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- Imagen sacada de Galeria -->
+
+        <ImageView
+            android:id="@+id/imagen_alumno"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#d3f5e7"
+
+            />
+
+        <!-- Detalle nombre -->
+        <TextView
+            android:id="@+id/tv_detallenombre"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="#0439f5"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Detalle apellido -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos del alumno: "
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            />
+
+
+        <!-- Detalle edad -->
+        <TextView
+            android:id="@+id/tv_detalleedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="0.16" />
+
+        <!-- Detalle direccion -->
+        <TextView
+            android:id="@+id/tv_detalledireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <!-- Muestra MAPVIEW de la direccion ingresada arriba -->
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.gms.maps.MapView>
+
+
+        <!-- Detalle estudios -->
+        <TextView
+            android:id="@+id/tv_detalleestudios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <!-- Detalle email -->
+        <TextView
+            android:id="@+id/tv_detalleemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <!-- Detalle telefono -->
+        <TextView
+            android:id="@+id/tv_detalletelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/btn_Editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="#ffd903"
+                    android:padding="8dp"
+                    android:text="Modificar" />
+
+
+                <Button
+                    android:id="@+id/btn_Eliminar"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.12"
+                    android:padding="8dp"
+
+                    android:text="Eliminar"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/botonredondo"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
